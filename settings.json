@@ -1,0 +1,52 @@
+{
+  "saveToDir": "/parsed-files/",
+  "JSONStringifyIndent": 2,
+  "options": {
+    "collection": {
+      "alias": "c",
+      "type": "String"
+    },
+    "databaseUrl": {
+      "alias": "dbUrl",
+      "type": "String"
+    },
+    "file": {
+      "alias": "f",
+      "type": "String"
+    },
+    "hasHeaders": {
+      "alias": "hh",
+      "type": "String"
+    },
+    "headers": {
+      "alias": "h",
+      "type": "Array"
+    },
+    "keyIndex": {
+      "alias": "ki",
+      "type": "Number"
+    },
+    "method": {
+      "alias": "m",
+      "type": "String"
+    },
+    "removeDuplicate": {
+      "alias": "rd",
+      "type": "String"
+    },
+    "skipHeader": {
+      "alias": "sh",
+      "type": "String"
+    },
+    "sort": {
+      "alias": "s",
+      "type": "String"
+    }
+  },
+  "mandatoryArguments": {
+    "saveToJSON": ["file", "keyIndex"],
+    "insertToCollection": ["databaseUrl", "collection", "file", "keyIndex"]
+  },
+  "optionalArguments": ["hasHeaders","headers","removeDuplicate", "skipHeader", "sort"],
+  "allowedFileExtension": ["csv"]
+}
